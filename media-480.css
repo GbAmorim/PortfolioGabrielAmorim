@@ -4,11 +4,31 @@
         height: 150px;
     }
 
+    #sessao-sobre {
+        width: 100dvw;
+        height: 100dvh;
+    }
+
+    #sessao-skills {
+        width: 100dvw;
+        height: 100dvh;
+    }
+
+    #sessao-projetos {
+        width: 100dvw;
+        height: 100dvh;
+        margin-top: 1300px;
+    }
+
 
     .sobre__descricao {
         & .animated-text {
             font-size: 1.7rem;
             min-width: 0;
+        }
+
+        & p {
+            font-size: 14px;
         }
     }
 

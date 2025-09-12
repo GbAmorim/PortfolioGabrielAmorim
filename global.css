@@ -61,6 +61,7 @@ html {
 
     .card .card-profile .card-black {
         background-color: #000000;
+        border: 1px solid black;
     }
 
 
@@ -195,8 +196,8 @@ p {
 }
 
 .logo-icons {
-    width: 32px;
-    height: 32px;
+    width: 47px;
+    height: 47px;
     transition: transform 0.3s ease;
     cursor: pointer;
 
@@ -215,7 +216,7 @@ p {
 }
 
 .hero {
-    height: 100vh;
+    height: 100dvh;
 }
 
 

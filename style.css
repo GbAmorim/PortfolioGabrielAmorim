@@ -760,8 +760,9 @@
 
 .contato {
     padding: 10rem;
-    margin-top: 5rem;
+    margin-top: 5em;
     background-color: #595959;
+    width: 100%;
 }
 
 .contato-container {
@@ -793,6 +794,13 @@
     list-style: none;
     padding: 0;
     margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column;
+}
+
+.butcontato {
+    width: 100%;
 }
 
 .contato-info ul li {
