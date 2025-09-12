@@ -1,0 +1,19 @@
+@media all and (max-width: 30em) {
+    .logo-programador {
+        width: 150px;
+        height: 150px;
+    }
+
+
+    .sobre__descricao {
+        & .animated-text {
+            font-size: 1.7rem;
+            min-width: 0;
+        }
+    }
+
+    .skills__bar-image img {
+        width: 150px;
+        height: auto;
+    }
+}

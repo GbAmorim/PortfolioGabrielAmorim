@@ -1,0 +1,76 @@
+@media all and (max-width: 48em) {
+
+    #cabecalho {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #cabecalho-itens {
+        display: none;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        width: 100%;
+    }
+
+    #cabecalho-itens.open {
+        display: flex;
+    }
+
+    .sobre {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+        padding: 2rem;
+        align-items: center;
+        width: 100%;
+    }
+
+    .sobre__descricao {
+        & .animated-text {
+            font-size: 2rem;
+            min-width: 0;
+        }
+    }
+
+    .skills__bar-image img {
+        width: 250px;
+        height: auto;
+    }
+
+    .skills__bar {
+        & .contents {
+            & .content-skills {
+                align-items: center;
+            }
+        }
+    }
+
+    .contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem;
+    }
+
+    .contato a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contato-container {
+        flex-direction: column;
+    }
+
+    .contato-info,
+    .contato-formulario {
+        flex: 1 1 100%;
+    }
+}

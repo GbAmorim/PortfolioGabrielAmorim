@@ -1,0 +1,237 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--scroll-bar);
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-bar-second);
+    border-radius: 15px;
+    width: 5px;
+    box-shadow: 0 2px 10px #0003;
+}
+
+:root {
+    --text-color: #000000;
+    --scroll-bar-second: #000;
+    --scroll-bar: #fff;
+    --auxiliar-color: #000000;
+    --text-second-color: #747474;
+    --effect-color: #a5a5a5;
+    --background-second-color: #fff;
+    --background-black-color: #212529;
+    --background-color: #f2f2f2;
+    --swiper-theme-color: #000000;
+    --color-container: #a5a5a5;
+}
+
+.darkmode {
+    --text-color: #fff;
+    --scroll-bar-second: #fff;
+    --scroll-bar: #2c2c2c;
+    --background-color: #2c2c2c;
+    --swiper-theme-color: #000000;
+
+    h3 {
+        &::after {
+            background-color: #fff;
+        }
+    }
+
+    .card .card-image .card-tag {
+        color: #000;
+    }
+
+    #menu-toggle {
+        color: #fff;
+    }
+
+    .card .card-profile .card-black {
+        background-color: #000000;
+    }
+
+
+    .card .card-content .card-title {
+        color: #000;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: var(--scroll-bar-second);
+        border-radius: 15px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--scroll-bar);
+        border-radius: 15px;
+        width: 5px;
+        box-shadow: 0 2px 10px #0003;
+    }
+
+}
+
+/* .darkmode {
+    --text-color: #000000;
+    --effect-color: #7e848663;
+    --background-black-color: #212529;
+    --background-second-color: #fff;
+    --background-color: #e9ecef;
+    --swiper-theme-color: #000000;
+    --color-container: #adb5bd;
+    --text-second-color: #747474;
+} */
+
+body {
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+nav {
+    background-color: var(--background-color);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+li {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+}
+
+li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: var(--text-color);
+    transition: all 600ms ease;
+}
+
+li:hover::after {
+    width: 100%;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 3.32rem;
+    margin-top: 4rem;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+}
+
+h3 {
+    font-size: 2.7rem;
+    font-weight: 600;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        border-radius: 35px;
+        background-color: #000;
+        margin-top: 3px;
+    }
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+p {
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.button {
+    color: var(--background-second-color);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    background-color: var(--auxiliar-color);
+    padding: 2rem 4rem;
+    border-radius: 35px;
+    border: none;
+    transition: all 1s ease;
+    text-decoration: none;
+}
+
+.button:hover,
+.button:active {
+    background-color: var(--effect-color);
+    cursor: pointer;
+    color: var(--auxiliar-color);
+    font-weight: 700;
+}
+
+.logo-icons {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+.section {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    width: 100vw;
+    align-items: center;
+    gap: 4rem;
+}
+
+.hero {
+    height: 100vh;
+}
+
+
+.autoShow {
+    animation: autoShowAnimation both;
+    animation-timeline: view(100% 5%);
+}
+
+@keyframes autoShowAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}

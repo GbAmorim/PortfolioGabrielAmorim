@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio profissional de Gabriel Amorim, desenvolvedor frontend. Veja projetos, habilidades e entre em contato.">
+    <link rel="icon" type="image/png" sizes="512x512" href="/images/iconeaba.png">
+    <title> Gabriel Amorim - Desenvolvedor Frontend</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@100..900&family=Silkscreen:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="media-1900.css" media="(max-width: 1900px)">
+    <link rel="stylesheet" href="media-1400.css" media="(max-width: 1400px)">
+    <link rel="stylesheet" href="media-1200.css" media="(max-width: 1200px)">
+    <link rel="stylesheet" href="media-992.css" media="(max-width: 1035px)">
+    <link rel="stylesheet" href="media-768.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="media-480.css" media="(max-width: 480px)">
+
+    <script type="text/javascript" src="darkmode.js" defer></script>
+</head>
+
+<body class="darkmode">
+    <!-- SESSÃO HEADER -->
+    <header id="navbar">
+        <nav>
+            <div class="logo__navbar">
+                <a href="index.html">
+                    <img id="main-logo" src="/images/logoblack.svg" alt="Logo principal" height="100px" width="100px"
+                        loading="lazy">
+                </a>
+            </div>
+
+            <div id="mobile-menu" class="hidden">
+                <button id="close-menu" aria-label="Fechar menu"><img id="botaofechar" src="/icons/closeblack.svg"
+                        alt="Botão de Fechar"></button>
+                <div id="cabecalho__navbar">
+                    <ul id="cabecalho__navbar-itens">
+                        <li><a href="#sessao-sobre" data-translate="sobre">Sobre</a></li>
+                        <li><a href="#sessao-skills" data-translate="skills">Skills</a></li>
+                        <li><a href="#sessao-projetos" data-translate="projetos">Projetos</a></li>
+                        <li><a href="#contato" data-translate="contatos">Contatos</a></li>
+                    </ul>
+                </div>
+                <div id="buttons__cabecalho">
+                    <button id="language-switch">
+                        <button id="theme-switch" aria-label="Alternar tema">
+                            <img src="images/darkmodeicon.svg" alt="Ícone de tema" />
+                            <img src="images/lightmodeicon.svg" alt="">
+                        </button>
+                        <img id="brasil" src="/images/brasil.png" alt="Bandeira - Brasil" loading="lazy">
+                        <img id="estadosunidos" src="/images/estados-unidos.png" alt="Bandeira - Estados Unidos"
+                            loading="lazy">
+                    </button>
+                </div>
+            </div>
+
+            <button id="menu-toggle" aria-label="Abrir menu">
+                <img id="menu-icon" src="/icons/menuicon.svg" alt="Logo do Menu" loading="lazy">
+            </button>
+        </nav>
+    </header>
+
+
+    <!-- SESSÃO SOBRE -->
+    <main>
+        <section class="section hero" id="sessao-sobre">
+            <div class="sobre">
+                <div class="sobre__descricao">
+                    <div class="animated-text"><span></span></div>
+                    <p data-translate="heroText">Olá, me chamo Gabriel Amorim de Ceia, sou desenvolvedor frontend com
+                        formação em Ciência da
+                        Computação. Antes
+                        de
+                        mergulhar
+                        no mundo da programação, atuei como artista 3D em projetos voltados para o metaverso e NFTs.
+                        Hoje,
+                        aplico minha criatividade no desenvolvimento de interfaces web, buscando unir design,
+                        usabilidade e
+                        performance em cada projeto.</p>
+                    <div class="sobre__buttons">
+                        <div class="sobre__buttons-links">
+                            <button class="button"><a href="/documents/CV - Gabriel Amorim.pdf" target="_blank">Dowload
+                                    CV</a></button>
+                            <button class="button"><a href="https://wa.me/21983856721"
+                                    target="_blank">Whatsapp</a></button>
+                        </div>
+                        <div class="sobre__icons">
+                            <a href="https://github.com/GbAmorim" target="_blank"><img class="logo-icons"
+                                    src="/icons/github.png" alt="Logo do github" loading="lazy"></a>
+                            <a href="https://www.linkedin.com/in/gabriel-amorim-52b984263/?locale=pt_BR"
+                                target="_blank"><img class="logo-icons" src="/icons/linkedin.png" alt="Logo do linkedin"
+                                    loading="lazy"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="logo-programador" src="/images/programador.svg" alt="Imagem de programador" loading="lazy">
+            </div>
+
+            <div class="floating-wrapper" id="arrowFlutuante"><img src="/icons/arrowdown.svg" alt="" class="arrowdown">
+            </div>
+
+        </section>
+
+        <!-- SESSÃO SKILLS -->
+        <section class="section hero autoShow" id="sessao-skills">
+            <h2 class="skills__title autoShow" data-translate="skillsTitle">Minhas habilidades</h2>
+            <div class="skills__section">
+                <div class="skills__container">
+                    <div class="skills__container-title">
+                        <h3>Hard Skills</h3>
+                    </div>
+
+                    <div class="skills__bar">
+                        <div class="skills__bar-image"><img src="/images/porcentagensskills.svg"
+                                alt="Imagem ilustrativa de skills">
+                        </div>
+
+                        <div class="contents">
+                            <div class="content-skills">
+                                <h4 data-translate="skillsLang">Linguagens</h4>
+                                <div class="skills-horizontal">
+                                    <div class="skills">
+                                        <div class="details html">
+                                            <span>HTML</span>
+                                            <span>90%</span>
+                                        </div>
+                                        <div class="bar">
+                                            <div id="html-bar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skills">
+                                        <div class="details html">
+                                            <span>CSS</span>
+                                            <span>85%</span>
+                                        </div>
+                                        <div class="bar">
+                                            <div id="css-bar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skills">
+                                        <div class="details html">
+                                            <span>JS</span>
+                                            <span>55%</span>
+                                        </div>
+                                        <div class="bar">
+                                            <div id="js-bar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skills">
+                                        <div class="details html">
+                                            <span>C++</span>
+                                            <span>20%</span>
+                                        </div>
+                                        <div class="bar">
+                                            <div id="c-bar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skills">
+                                        <div class="details html">
+                                            <span>Java</span>
+                                            <span>20%</span>
+                                        </div>
+                                        <div class="bar">
+                                            <div id="java-bar"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-skills">
+                                <h4>Frameworks</h4>
+                                <div class="skills-horizontal">
+                                    <div class="skills">
+                                        <div class="details html">
+                                            <span>Tailwind</span>
+                                            <span>65%</span>
+                                        </div>
+                                        <div class="bar">
+                                            <div id="tailwind-bar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skills">
+                                        <div class="details html">
+                                            <span>Bootstrap</span>
+                                            <span>75%</span>
+                                        </div>
+                                        <div class="bar">
+                                            <div id="bootstrap-bar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skills">
+                                        <div class="details html">
+                                            <span>Sass</span>
+                                            <span>60%</span>
+                                        </div>
+                                        <div class="bar">
+                                            <div id="sass-bar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skills">
+                                        <div class="details html">
+                                            <span>React</span>
+                                            <span data-translate="skillsEstudando">(Estudando)</span>
+                                        </div>
+                                        <div class="bar">
+                                            <div id="react-bar"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-skills">
+                                <h4 data-translate="skillsFerramentas">Ferramentas</h4>
+                                <div class="skills-horizontal">
+                                    <div class="skills">
+                                        <div class="details html">
+                                            <span>Figma</span>
+                                            <span>45%</span>
+                                        </div>
+                                        <div class="bar">
+                                            <div id="figma-bar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skills">
+                                        <div class="details html">
+                                            <span>Git</span>
+                                            <span>70%</span>
+                                        </div>
+                                        <div class="bar">
+                                            <div id="git-bar"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="other-skills">
+
+                    <p data-translate="skillsSobre">Ao longo da minha jornada como desenvolvedor frontend, tenho
+                        mergulhado nessas tecnologias,
+                        buscando sempre evoluir com cada projeto. A lista está sempre crescendo conforme novos desafios
+                        surgem.</p>
+
+                    <div class="soft__skills">
+                        <div>
+                            <h3>Soft Skills</h3>
+                        </div>
+                        <ul class="soft__list">
+                            <div class="soft__list-content">
+                                <div>
+                                    <li><img class="seta-direita" src="/icons/arrowright.svg"
+                                            alt="imagem de seta direita">
+                                        <p data-translate="skillsComunicacao">Comunicação</p>
+                                    </li>
+                                    <li><img class="seta-direita" src="/icons/arrowright.svg"
+                                            alt="imagem de seta direita">
+                                        <p data-translate="skillsColaboracao">Colaboração</p>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li><img class="seta-direita" src="/icons/arrowright.svg"
+                                            alt="imagem de seta direita">Resolução</li>
+                                    <li><img class="seta-direita" src="/icons/arrowright.svg"
+                                            alt="imagem de seta direita">
+                                        <p data-translate="skillsAdaptabilidade">Adaptabilidade</p>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="soft__list-content">
+                                <div>
+                                    <li><img class="seta-direita" src="/icons/arrowright.svg"
+                                            alt="imagem de seta direita">
+                                        <p data-translate="skillsPontualidade">Pontualidade</p>
+                                    </li>
+                                    <li><img class="seta-direita" src="/icons/arrowright.svg"
+                                            alt="imagem de seta direita">
+                                        <p data-translate="skillsDetalhismo">Detalhismo</p>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li><img class="seta-direita" src="/icons/arrowright.svg"
+                                            alt="imagem de seta direita">
+                                        <p data-translate="skillsCritica">Crítica</p>
+                                    </li>
+                                    <li><img class="seta-direita" src="/icons/arrowright.svg"
+                                            alt="imagem de seta direita">
+                                        <p data-translate="skillsCriatividade">Criatividade</p>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroller-wrapper">
+                <div class="scroller-track">
+                    <div class="scroller-item"><img src="/icons/htmlicon.svg" alt="">HTML &
+                        CSS <img src="/icons/css.svg" alt=""></div>
+                    <div class="scroller-item"><img src="/icons/javascript.svg" alt="">JavaScript</div>
+                    <div class="scroller-item"><img src="/icons/react.svg" alt="">React</div>
+                    <div class="scroller-item"><img src="/icons/git.svg" alt="">Git</div>
+                    <div class="scroller-item"><img src="/icons/bootstrap.svg" alt="">Bootstrap</div>
+                    <div class="scroller-item"><img src="/icons/sass.svg" alt="">Sass</div>
+                    <div class="scroller-item"><img src="/icons/tailwind.svg" alt="">Tailwind</div>
+                    <div class="scroller-item"><img src="/icons/figma.svg" alt="">Figma</div>
+                    <div class="scroller-item"><img src="/icons/java.svg" alt="">Java</div>
+                    <div class="scroller-item"><img src="/icons/c.svg" alt="">C++</div>
+
+
+                    <div class="scroller-item"><img src="/icons/htmlicon.svg" alt="">HTML &
+                        CSS <img src="/icons/css.svg" alt=""></div>
+                    <div class="scroller-item"><img src="/icons/javascript.svg" alt="">JavaScript</div>
+                    <div class="scroller-item"><img src="/icons/react.svg" alt="">React</div>
+                    <div class="scroller-item"><img src="/icons/git.svg" alt="">Git</div>
+                    <div class="scroller-item"><img src="/icons/bootstrap.svg" alt="">Bootstrap</div>
+                    <div class="scroller-item"><img src="/icons/sass.svg" alt="">Sass</div>
+                    <div class="scroller-item"><img src="/icons/tailwind.svg" alt="">Tailwind</div>
+                    <div class="scroller-item"><img src="/icons/figma.svg" alt="">Figma</div>
+                    <div class="scroller-item"><img src="/icons/java.svg" alt="">Java</div>
+                    <div class="scroller-item"><img src="/icons/c.svg" alt="">C++</div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SESSÃO PROJETOS -->
+
+        <section class="section autoShow" id="sessao-projetos">
+            <h2 class=" projects__title " data-translate="projectsTitle">Projetos</h2>
+            <div class="projects__container swiper">
+                <div class="wrapper">
+                    <div class="card-list swiper-wrapper">
+
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                                <img src="/images/projeto5.png" alt="imagem do projeto" loading="lazy">
+                                <p class="card-tag" data-translate="projetoPessoal">Projeto Pessoal</p>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title" data-translate="projetoPrimeirotitulo">Réplica do Sistema de
+                                    pedidos do MCDonald's</h3>
+                                <p class="card-text" data-translate="projetoPrimeirotexto">
+                                    Sistema de autoatendimento, como aqueles do Mc Donald 's e Burger King, onde você
+                                    chega e faz o seu pedido sem falar com o atendente.
+                                </p>
+                                <div class="card-footer">
+                                    <div class="card-profile">
+                                        <img src="/icons/tailwind.svg" alt="logo tecnologias" class="card-black"
+                                            loading="lazy" width="32px" height="32px">
+                                        <img src="/icons/typescript.svg" alt="logo tecnologias" loading="lazy">
+                                        <img src="/icons/nextjs.svg" alt="logo tecnologias">
+                                        <img src="/icons/shadcn.png" alt="logo tecnologias" loading="lazy">
+                                        <img src="/icons/nodejs.svg" alt="logo tecnologias" loading="lazy">
+                                        <img src="/icons/postgresql.svg" alt="logo tecnologias" loading="lazy">
+                                        <img src="/icons/react.svg" alt="logo tecnologias" class="card-black"
+                                            loading="lazy">
+                                    </div>
+                                    <a href="https://fullstackweek-donalds-qdmp68183-gbamorims-projects.vercel.app/fsw-donalds"
+                                        class="button" data-translate="projetoButao">Ver Projeto</a>
+                                    <a href="https://github.com/GbAmorim/fullstackweek-donalds" target="_blank"><img
+                                            class="logo-icons" src="/icons/github.png" alt="Logo do github"
+                                            loading="lazy"></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                                <img src="/images/projeto4.png" alt="imagem do projeto" loading="lazy">
+                                <p class="card-tag" data-translate="projetoPessoal">Projeto Pessoal</p>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title" data-translate="projetoSegundotitulo">Site de pesquisa de filmes
+                                </h3>
+                                <p class="card-text" data-translate="projetoSegundotexto">
+                                    Esse site possibilita o usuário a pesquisar filmes através de uma API e salva-los
+                                    utilizando
+                                    localstorage.
+                                </p>
+                                <div class="card-footer">
+                                    <div class="card-profile">
+                                        <img src="/icons/css.svg" alt="logo tecnologias" class="card-black"
+                                            loading="lazy" width="32px" height="32px">
+                                        <img src="/icons/javascript.svg" alt="logo tecnologias" class="card-black"
+                                            loading="lazy" width="32px" height="32px">
+                                        <img src="/icons/htmlicon.svg" alt="logo tecnologias" class="card-black"
+                                            loading="lazy" width="32px" height="32px">
+                                    </div>
+                                    <a href="https://my-movies-nu.vercel.app/" class="button"
+                                        data-translate="projetoButao" target="_blank">Ver Projeto</a>
+                                    <a href="https://github.com/GbAmorim/MyMovies" target="_blank"><img
+                                            class="logo-icons" src="/icons/github.png" alt="Logo do github"
+                                            loading="lazy"></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                                <img src="/images/projeto3.png" alt="imagem do projeto" loading="lazy">
+                                <p class="card-tag" data-translate="projetoPessoal">Projeto Pessoal</p>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title" data-translate="projetoTerceirotitulo">Landing Page Bootstrap
+                                </h3>
+                                <p class="card-text" data-translate="projetoTerceirotexto">
+                                    Landing page desenvolvida através do curso de programação frontend da hashtag
+                                    treinamentos.
+                                </p>
+                                <div class="card-footer">
+                                    <div class="card-profile">
+                                        <img src="/icons/bootstrap.svg" alt="logo tecnologias" loading="lazy"
+                                            width="32px" height="32px">
+                                        <img src="/icons/htmlicon.svg" alt="logo tecnologias" class="card-black"
+                                            loading="lazy" width="32px" height="32px">
+                                    </div>
+                                    <a href="https://site-lista-de-espera-bootstrap.vercel.app/" class="button"
+                                        data-translate="projetoButao">Ver Projeto</a>
+                                    <a href="https://github.com/GbAmorim/Site-lista-de-espera-bootstrap"
+                                        target="_blank"><img class="logo-icons" src="/icons/github.png"
+                                            alt="Logo do github" loading="lazy"></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                                <img src="/images/projeto2.png" alt="imagem do projeto" loading="lazy">
+                                <p class="card-tag" data-translate="projetoPessoal">Projeto Pessoal</p>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title" data-translate="projetoQuartotitulo">Site - Portal Hashtag
+                                    treinamentos</h3>
+                                <p class="card-text" data-translate="projetoQuartotexto">
+                                    Site desenvolvido no curso de programação da Hashtag Treinamentos, feito apenas em
+                                    Css e
+                                    Html.
+                                </p>
+                                <div class="card-footer">
+                                    <div class="card-profile">
+                                        <img src="/icons/css.svg" alt="logo tecnologias" class="card-black"
+                                            loading="lazy" width="32px" height="32px">
+                                        <img src="/icons/htmlicon.svg" alt="logo tecnologias" class="card-black"
+                                            loading="lazy" width="32px" height="32px">
+                                    </div>
+                                    <a href="https://site-portal-hashtag-treinamentos.vercel.app/" class="button"
+                                        data-translate="projetoButao" target="_blank">Ver Projeto</a>
+                                    <a href="https://github.com/GbAmorim/Site-Portal-Hashtag-Treinamentos"><img
+                                            class="logo-icons" src="/icons/github.png" alt="Logo do github"
+                                            loading="lazy"></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                                <img src="/images/projeto6.png" alt="imagem do projeto" loading="lazy">
+                                <p class="card-tag" data-translate="projetoPessoal">Projeto Pessoal</p>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title" data-translate="projetoQuintotitulo">Imersão Dev com Google
+                                    Gemini (Alura)</h3>
+                                <p class="card-text" data-translate="projetoQuintotexto">
+                                    Essa aplicação te ajuda a encontrar as informações mais relevantes sobre cada carta,
+                                    desde a descrição até o motivo de ela ser tão icônica.
+                                </p>
+                                <div class="card-footer">
+                                    <div class="card-profile">
+                                        <img src="/icons/css.svg" alt="logo tecnologias" class="card-black"
+                                            loading="lazy" width="32px" height="32px">
+                                        <img src="/icons/javascript.svg" alt="logo tecnologias" class="card-black"
+                                            loading="lazy" width="32px" height="32px">
+                                        <img src="/icons/htmlicon.svg" alt="logo tecnologias" class="card-black"
+                                            loading="lazy" width="32px" height="32px">
+                                    </div>
+                                    <a href="https://imersao-dev-com-gemini-alura-magic-the-gathering.vercel.app/"
+                                        target="_blank" class="button" data-translate="projetoButao">Ver Projeto</a>
+                                    <a
+                                        href="https://github.com/GbAmorim/Imers-o-Dev-com-Gemini-Alura---Magic-The-Gathering"><img
+                                            class="logo-icons" src="/icons/github.png" alt="Logo do github"
+                                            loading="lazy"></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                                <img src="/images/projeto7.png" alt="imagem do projeto" loading="lazy">
+                                <p class="card-tag" data-translate="projetoBreve">EM BREVE</p>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title" data-translate="projetoSextotitulo">Sistema de Agendamento de
+                                    barbearia</h3>
+                                <p class="card-text" data-translate="projetoSextotexto">
+                                    Esse sistema visa o agendamento de barbeiros pelos clientes, de forma simples e
+                                    prática.
+                                </p>
+                                <div class="card-footer">
+                                    <div class="card-profile">
+                                        <img src="/icons/typescript.svg" alt="logo tecnologias" loading="lazy"
+                                            width="32px" height="32px">
+                                        <img src="/icons/react.svg" alt="logo tecnologias" class="card-black"
+                                            loading="lazy" width="32px" height="32px">
+                                        <img src="/icons/nodejs.svg" alt="logo tecnologias" loading="lazy" width="32px"
+                                            height="32px">
+                                        <img src="/icons/postgresql.svg" alt="logo tecnologias" loading="lazy"
+                                            width="32px" height="32px">
+                                        <img src="/icons/tailwind2.svg" alt="logo tecnologias" loading="lazy"
+                                            width="32px" height="32px">
+                                        <img src="/icons/shadcn.png" alt="logo tecnologias" loading="lazy" width="32px"
+                                            height="32px">
+                                        <img src="/icons/prima.svg" alt="logo tecnologias" loading="lazy" width="32px"
+                                            height="32px">
+                                    </div>
+                                    <a href="https://github.com/GbAmorim" target="_blank" class="button"
+                                        data-translate="projetoButao">Ver Projeto</a>
+                                    <a href="https://github.com/GbAmorim" target="_blank"><img class="logo-icons"
+                                            src="/icons/github.png" alt="Logo do github" loading="lazy"></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- <div class="card swiper-slide">
+                            <div class="card-image">
+                                <img src="/images/projeto8.png" alt="imagem do projeto" loading="lazy">
+                                <p class="card-tag">EM BREVE</p>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">E-comerce</h3>
+                                <p class="card-text">
+                                    Este e-commerce de loja de roupas foi desenvolvido durante um bootcamp, utilizando
+                                    tecnologias modernas para proporcionar uma experiência de compra online intuitiva e
+                                    eficiente.
+                                </p>
+                                <div class="card-footer">
+                                    <div class="card-profile">
+                                        <img src="/icons/typescript.svg" alt="logo tecnologias" loading="lazy"
+                                            width="32px" height="32px">
+                                        <img src="/icons/react.svg" alt="logo tecnologias" class="card-black"
+                                            loading="lazy" width="32px" height="32px">
+                                        <img src="/icons/nodejs.svg" alt="logo tecnologias" loading="lazy" width="32px"
+                                            height="32px">
+                                        <img src="/icons/postgresql.svg" alt="logo tecnologias" loading="lazy"
+                                            width="32px" height="32px">
+                                        <img src="/icons/tailwind2.svg" alt="logo tecnologias" loading="lazy"
+                                            width="32px" height="32px">
+                                        <img src="/icons/shadcn.png" alt="logo tecnologias" loading="lazy" width="32px"
+                                            height="32px">
+                                        <img src="/icons/nextjs.svg" alt="logo tecnologias" loading="lazy" width="32px"
+                                            height="32px">
+                                        <img src="/icons/stripe.svg" alt="logo tecnologias" loading="lazy" width="32px"
+                                            height="32px">
+                                    </div>
+                                    <a href="#" class="button">Ver Projeto</a>
+                                    <img class="logo-icons" src="/icons/github.png" alt="Logo do github" loading="lazy">
+                                </div>
+                            </div>
+                        </div> -->
+
+
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                                <img src="/images/projeto1.png" alt="imagem do projeto" loading="lazy">
+                                <p class="card-tag" data-translate="projetoPessoal">Projeto pessoal</p>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title" data-translate="projetoSetimotitulo">Landing page - Sass</h3>
+                                <p class="card-text" data-translate="projetoSetimotexto">
+                                    Landing page desenvolvido em Sass com responsividade mobile.
+                                </p>
+                                <div class="card-footer">
+                                    <div class="card-profile">
+                                        <img src="/icons/sass.svg" alt="logo tecnologias" class="card-black"
+                                            loading="lazy" width="32px" height="32px">
+                                        <img src="/icons/htmlicon.svg" alt="logo tecnologias" class="card-black"
+                                            loading="lazy" width="32px" height="32px">
+                                    </div>
+                                    <a href="https://inscricao-python-pagina.vercel.app/inscricao.html" target="_blank"
+                                        class="button" data-translate="projetoButao">Ver Projeto</a>
+                                    <a href="https://github.com/GbAmorim/inscricao-python-pagina" target="_blank"><img
+                                            class="logo-icons" src="/icons/github.png" alt="Logo do github"
+                                            loading="lazy"></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <a href="https://github.com/GbAmorim" target="_blank"><button class="button"
+                    data-translate="projetoButaovermais">Veja mais projetos</button></a>
+
+        </section>
+
+        <!-- SESSÃO CONTATO -->
+
+        <section class="contato" id="contato">
+            <a href="index.html"><img src="/images/logoblack.svg" alt="Logo escuro" height="100px" width="100px"
+                    loading="lazy"></a>
+            <div class="contato-container">
+
+                <div class="contato-info">
+                    <h2 data-translate="contactTitle">Entre em contato</h2>
+                    <p data-translate="contactText">Estou aqui para ajudar você a criar soluções digitais que
+                        impulsionam o crescimento do seu
+                        negócio. Entre em contato e vamos conversar sobre suas necessidades e como podemos alcançar seus
+                        objetivos juntos.</p>
+                    <ul>
+                        <a href="https://maps.app.goo.gl/sx3tZbpF3bvKUqY39" target="_blank">
+                            <li class="li-contato" data-translate="contactLocalizacao">
+                                Localização: Méier, Rio de Janeiro -
+                                RJ
+                            </li>
+                        </a>
+                        <li class="li-contato">Whatsapp: <a href="https://wa.me/21983856721" target="_blank"
+                                data-translate="contactClique">Clique aqui
+                                para conversar</a></li>
+                        <a href="mailto:gabrielamorimdeceia@gmail.com" target="_blank">
+                            <li class="li-contato">Email: gabrielamorimdeceia@gmail.com</li>
+                        </a>
+                    </ul>
+                    <div class="sobre__icons">
+                        <a href="https://github.com/GbAmorim" target="_blank"><img class="logo-icons"
+                                src="/icons/github.png" alt="Logo do github" loading="lazy"></a>
+                        <a href="https://www.linkedin.com/in/gabriel-amorim-52b984263/?locale=pt_BR"
+                            target="_blank"><img class="logo-icons" src="/icons/linkedin.png" alt="Logo do linkedin"
+                                loading="lazy"></a>
+                    </div>
+                </div>
+
+                <div class="contato-formulario">
+                    <h4 data-translate="contactMensagem">Envie sua mensagem</h4>
+                    <form action="https://formsubmit.co/gabrielamorimdeceia@gmail.com" method="POST">
+                        <input type="text" name="nome" data-translate="placeholderNome" placeholder="Seu nome" required>
+                        <input type="email" name="email" data-translate="placeholderEmail" placeholder="Seu e-mail"
+                            required>
+                        <textarea name="mensagem" rows="6" data-translate="placeholderMensagem"
+                            placeholder="Sua mensagem" required></textarea>
+                        <a href="#sessao-sobre"><button class="button" type="submit"
+                                data-translate="contactEnviar">Enviar</button></a>
+
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="Novo envio!">
+                        <input type="hidden" name="_next"
+                            value="https://portifolio-gabriel-amorim.vercel.app/obrigado.html">
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-container">
+                <a href="index.html"><img src="/images/logowhite.svg" alt="Logo escuro" height="40px" width="40px">
+                    <p>© 2025 Gabriel Amorim</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="translations.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="projects.js" defer></script>
+    <script src="script.js" defer></script>
+
+
+
+
+</body>
+
+</html>
