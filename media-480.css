@@ -6,7 +6,7 @@
 
     #sessao-sobre {
         width: 100dvw;
-        height: 100dvh;
+        height: calc(100dvh - 100px);
     }
 
     #sessao-skills {
@@ -17,7 +17,16 @@
     #sessao-projetos {
         width: 100dvw;
         height: 100dvh;
-        margin-top: 1300px;
+        margin-top: 1400px;
+    }
+
+    .soft__list {
+        gap: 2rem;
+    }
+
+
+    .other-skills p {
+        font-size: 1.5rem;
     }
 
 

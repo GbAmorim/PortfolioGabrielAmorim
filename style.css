@@ -550,211 +550,217 @@
 
 /* SESSÃO PROJETOS */
 
-.projects__title {
-    width: 100%;
+/* 1. Estilos Globais da Seção */
+.project-detail-section {
     display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &::after {
-        content: none;
-    }
+    /* Define a divisão principal em colunas */
+    gap: 80px;
+    /* Espaço entre as duas colunas */
+    padding: 80px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #121212;
+    /* Fundo escuro */
+    color: #f0f0f0;
+    /* Texto claro */
+    font-family: sans-serif;
+    border-radius: 2rem;
 }
 
-/* .swiper {
-    overflow: visible !important;
-} */
-
-.card {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-}
-
-.projects__container {
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    margin-top: 4rem;
-    align-items: center;
-}
-
-.wrapper {
-    max-width: 80vw;
-    margin: 20px auto;
-    padding: 15px;
-    overflow: hidden;
-    cursor: grab;
-}
-
-.wrapper .card {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    background: var(--background-second-color);
-    border-radius: 20px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease;
-}
-
-.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
-.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
-    margin-top: 3rem;
-}
-
-.wrapper .card:hover {
-    transform: translateY(-10px);
-}
-
-.card .card-image {
+/* 2. Coluna da Mídia/Arte (Esquerda) */
+.project-media {
+    flex: 1;
+    /* Permite que ocupe o espaço disponível */
+    min-width: 50%;
+    /* Ocupa pelo menos metade da largura */
     position: relative;
 }
 
-.card .card-image img {
+/* 3. Estilo da Imagem (simulando a borda curva e a sombra) */
+.project-media img {
     width: 100%;
-    border-radius: 22px;
-    padding: 10px;
-    aspect-ratio: 16/9;
-    object-fit: cover;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: block;
 }
 
-.card .card-image .card-tag {
+/* Tag "Conceptual Work" */
+.tag {
     position: absolute;
-    left: 25px;
-    top: 25px;
-    color: var(--text-color);
-    border-radius: 30px;
-    font-weight: 600;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    padding: 5px 15px;
-    background: var(--background-second-color);
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 4px 12px;
+    font-size: 0.8em;
+    border-radius: 8px 0 8px 0;
+    z-index: 10;
 }
 
-.card .card-content {
+/* 4. Coluna de Informações (Direita) */
+.project-info {
+    flex: 1;
+    min-width: 40%;
+    gap: 2rem;
+    /* Alinhe verticalmente com a imagem se necessário */
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    flex-grow: 1;
-    padding: 10px 25px 25px;
 }
 
-.card .card-content .card-text {
-    color: var(--text-second-color);
-    word-break: break-word;
-    line-height: 1.6;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
-
-.card .card-content .card-title {
-    color: var(--text-color);
-    font-size: 2rem;
+.project-info h1 {
+    font-size: 2.5rem;
     font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 15px;
+    line-height: 1.2;
+    margin-top: 0;
 }
 
-.card .card-content .card-footer {
-    position: relative;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    padding-top: 15px;
-    margin-top: auto;
-    justify-content: space-between;
-    border-top: 2px solid rgba(0, 0, 0, 0.5);
+.description {
+    color: #aaaaaa;
+    line-height: 1.6;
 }
 
-.card .card-footer {
+.project-technologies {
     display: flex;
-    flex-flow: column;
     gap: 2rem;
 }
 
-.card .card-footer .card-profile {
+/* 5. Metadados do Projeto (Year, Role) */
+.project-metadata {
+    margin-top: 40px;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+}
+
+.project-metadata h2 {
+    font-size: 0.9em;
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+
+.metadata-row {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: space-between;
+    /* Alinha o texto à esquerda e o valor à direita */
+    padding: 10px 0;
+    font-size: 1.1em;
+    border-bottom: 1px solid #333;
 }
 
-.card .card-profile img {
-    width: 32px;
-    height: 32px;
-    background-color: var(--background-second-color);
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid var(--text-color);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.card .card-profile .card-black {
-    background-color: var(--text-color);
-}
-
-.card .card-profile .card-profile-info {
+/* 6. Ações (Botões/Links) */
+.project-actions {
     display: flex;
-    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
 }
 
-.card .card-footer .button {
-    font-size: 1.33rem;
-    transition: all 0.3s ease;
+.btn-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    /* Para simular o hover */
+    transition: border-bottom 0.3s;
 }
 
-.card .card-footer .button:hover {
-    transform: translateY(-6px);
+.btn-link:hover {
+    border-bottom: 2px solid white;
+    /* Exemplo de cor de destaque */
 }
 
-.wrapper .swiper-pagination-bullet {
-    height: 15px;
-    width: 15px;
-    overflow: hidden;
-    opacity: 1;
-    background: var(--effect-color);
-}
-
-.wrapper .swiper-pagination-bullet-active::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--text-color);
-    transform: scaleX(0);
-    transform-origin: left center;
-    animation: autoplay-loading 5s linear forwards;
-}
-
-.aba:hover .wrapper .swiper-pagination-bullet-active::before {
-    animation-play-state: paused;
-}
-
-@keyframes autoplay-loading {
-    100% {
-        transform: scaleX(1);
+/* 7. Responsividade (quebra a coluna em uma única pilha para telas menores) */
+@media (max-width: 900px) {
+    .project-detail-section {
+        flex-direction: column;
+        /* Colunas viram linhas */
+        gap: 40px;
+        padding: 40px 20px;
     }
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-    color: var(--text-color) !important;
-    margin: 3rem;
+
+/* SESSÃO NFT */
+
+.nft {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
 }
 
-.wrapper :where(.swiper-button-prev, .swiper-button-next) {
-    color: var(--text-color);
+.nft-titulo {
+    margin-top: 10rem;
+}
+
+.swiper {
+    margin-bottom: 5rem;
+}
+
+.card-wrapper {
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.card-list .card-item {
+    list-style: none;
+}
+
+.card-list .card-item .card-link {
+    user-select: none;
+    display: block;
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+
+}
+
+.card-list .card-item .card-link:active {
+    cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+    border-color: black;
+}
+
+.card-list .card-link .card-image {
+    width: 100%;
+    aspect-ratio: 16/16;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.card-wrapper .swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: black;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button {
+    color: black;
     margin-top: -35px;
-    transition: all 0.3s ease;
 }
 
-.wrapper :where(.swiper-button-prev, .swiper-button-next):hover {
-    color: var(--background-second-color);
-}
+@media screen and (max-width: 768px) {
+    .card-wrapper {
+        margin: 0 10px 25px;
+    }
 
+    .card-wrapper .swiper-slide-button {
+        display: none;
+    }
+}
 
 /* SESSÃO CONTATO */
 

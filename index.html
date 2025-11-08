@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
     <link
         href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@100..900&family=Silkscreen:wght@400;700&display=swap"
         rel="stylesheet">
@@ -112,7 +114,7 @@
         </section>
 
         <!-- SESSÃO SKILLS -->
-        <section class="section hero autoShow" id="sessao-skills">
+        <section class="section hero " id="sessao-skills">
             <h2 class="skills__title autoShow" data-translate="skillsTitle">Minhas habilidades</h2>
             <div class="skills__section">
                 <div class="skills__container">
@@ -272,7 +274,9 @@
                                 </div>
                                 <div>
                                     <li><img class="seta-direita" src="/icons/arrowright.svg"
-                                            alt="imagem de seta direita">Resolução</li>
+                                            alt="imagem de seta direita">
+                                        <p data-translate="skillsResolucao">Resolução</p>
+                                    </li>
                                     <li><img class="seta-direita" src="/icons/arrowright.svg"
                                             alt="imagem de seta direita">
                                         <p data-translate="skillsAdaptabilidade">Adaptabilidade</p>
@@ -339,283 +343,320 @@
 
         <!-- SESSÃO PROJETOS -->
 
-        <section class="section autoShow" id="sessao-projetos">
-            <h2 class=" projects__title " data-translate="projectsTitle">Projetos</h2>
-            <div class="projects__container swiper">
-                <div class="wrapper">
-                    <div class="card-list swiper-wrapper">
+        <section class="section" id="sessao-projetos">
+            <h2 class="projects__title" data-translate="projectsTitle">Projetos</h2>
 
-                        <div class="card swiper-slide">
-                            <div class="card-image">
-                                <img src="/images/projeto5.png" alt="imagem do projeto" loading="lazy">
-                                <p class="card-tag" data-translate="projetoPessoal">Projeto Pessoal</p>
-                            </div>
-                            <div class="card-content">
-                                <h3 class="card-title" data-translate="projetoPrimeirotitulo">Réplica do Sistema de
-                                    pedidos do MCDonald's</h3>
-                                <p class="card-text" data-translate="projetoPrimeirotexto">
-                                    Sistema de autoatendimento, como aqueles do Mc Donald 's e Burger King, onde você
-                                    chega e faz o seu pedido sem falar com o atendente.
-                                </p>
-                                <div class="card-footer">
-                                    <div class="card-profile">
-                                        <img src="/icons/tailwind.svg" alt="logo tecnologias" class="card-black"
-                                            loading="lazy" width="32px" height="32px">
-                                        <img src="/icons/typescript.svg" alt="logo tecnologias" loading="lazy">
-                                        <img src="/icons/nextjs.svg" alt="logo tecnologias">
-                                        <img src="/icons/shadcn.png" alt="logo tecnologias" loading="lazy">
-                                        <img src="/icons/nodejs.svg" alt="logo tecnologias" loading="lazy">
-                                        <img src="/icons/postgresql.svg" alt="logo tecnologias" loading="lazy">
-                                        <img src="/icons/react.svg" alt="logo tecnologias" class="card-black"
-                                            loading="lazy">
-                                    </div>
-                                    <a href="https://fullstackweek-donalds-qdmp68183-gbamorims-projects.vercel.app/fsw-donalds"
-                                        class="button" data-translate="projetoButao">Ver Projeto</a>
-                                    <a href="https://github.com/GbAmorim/fullstackweek-donalds" target="_blank"><img
-                                            class="logo-icons" src="/icons/git2.svg" alt="Logo do github"
-                                            loading="lazy"></a>
-                                </div>
-                            </div>
-                        </div>
+            <div class="projects__grid">
 
-
-                        <div class="card swiper-slide">
-                            <div class="card-image">
-                                <img src="/images/projeto4.png" alt="imagem do projeto" loading="lazy">
-                                <p class="card-tag" data-translate="projetoPessoal">Projeto Pessoal</p>
-                            </div>
-                            <div class="card-content">
-                                <h3 class="card-title" data-translate="projetoSegundotitulo">Site de pesquisa de filmes
-                                </h3>
-                                <p class="card-text" data-translate="projetoSegundotexto">
-                                    Esse site possibilita o usuário a pesquisar filmes através de uma API e salva-los
-                                    utilizando
-                                    localstorage.
-                                </p>
-                                <div class="card-footer">
-                                    <div class="card-profile">
-                                        <img src="/icons/css.svg" alt="logo tecnologias" class="card-black"
-                                            loading="lazy" width="32px" height="32px">
-                                        <img src="/icons/javascript.svg" alt="logo tecnologias" class="card-black"
-                                            loading="lazy" width="32px" height="32px">
-                                        <img src="/icons/htmlicon.svg" alt="logo tecnologias" class="card-black"
-                                            loading="lazy" width="32px" height="32px">
-                                    </div>
-                                    <a href="https://my-movies-nu.vercel.app/" class="button"
-                                        data-translate="projetoButao" target="_blank">Ver Projeto</a>
-                                    <a href="https://github.com/GbAmorim/MyMovies" target="_blank"><img
-                                            class="logo-icons" src="/icons/git2.svg" alt="Logo do github"
-                                            loading="lazy"></a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="card swiper-slide">
-                            <div class="card-image">
-                                <img src="/images/projeto3.png" alt="imagem do projeto" loading="lazy">
-                                <p class="card-tag" data-translate="projetoPessoal">Projeto Pessoal</p>
-                            </div>
-                            <div class="card-content">
-                                <h3 class="card-title" data-translate="projetoTerceirotitulo">Landing Page Bootstrap
-                                </h3>
-                                <p class="card-text" data-translate="projetoTerceirotexto">
-                                    Landing page desenvolvida através do curso de programação frontend da hashtag
-                                    treinamentos.
-                                </p>
-                                <div class="card-footer">
-                                    <div class="card-profile">
-                                        <img src="/icons/bootstrap.svg" alt="logo tecnologias" loading="lazy"
-                                            width="32px" height="32px">
-                                        <img src="/icons/htmlicon.svg" alt="logo tecnologias" class="card-black"
-                                            loading="lazy" width="32px" height="32px">
-                                    </div>
-                                    <a href="https://site-lista-de-espera-bootstrap.vercel.app/" class="button"
-                                        data-translate="projetoButao">Ver Projeto</a>
-                                    <a href="https://github.com/GbAmorim/Site-lista-de-espera-bootstrap"
-                                        target="_blank"><img class="logo-icons" src="/icons/git2.svg"
-                                            alt="Logo do github" loading="lazy"></a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="card swiper-slide">
-                            <div class="card-image">
-                                <img src="/images/projeto2.png" alt="imagem do projeto" loading="lazy">
-                                <p class="card-tag" data-translate="projetoPessoal">Projeto Pessoal</p>
-                            </div>
-                            <div class="card-content">
-                                <h3 class="card-title" data-translate="projetoQuartotitulo">Site - Portal Hashtag
-                                    treinamentos</h3>
-                                <p class="card-text" data-translate="projetoQuartotexto">
-                                    Site desenvolvido no curso de programação da Hashtag Treinamentos, feito apenas em
-                                    Css e
-                                    Html.
-                                </p>
-                                <div class="card-footer">
-                                    <div class="card-profile">
-                                        <img src="/icons/css.svg" alt="logo tecnologias" class="card-black"
-                                            loading="lazy" width="32px" height="32px">
-                                        <img src="/icons/htmlicon.svg" alt="logo tecnologias" class="card-black"
-                                            loading="lazy" width="32px" height="32px">
-                                    </div>
-                                    <a href="https://site-portal-hashtag-treinamentos.vercel.app/" class="button"
-                                        data-translate="projetoButao" target="_blank">Ver Projeto</a>
-                                    <a href="https://github.com/GbAmorim/Site-Portal-Hashtag-Treinamentos"><img
-                                            class="logo-icons" src="/icons/git2.svg" alt="Logo do github"
-                                            loading="lazy"></a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="card swiper-slide">
-                            <div class="card-image">
-                                <img src="/images/projeto6.png" alt="imagem do projeto" loading="lazy">
-                                <p class="card-tag" data-translate="projetoPessoal">Projeto Pessoal</p>
-                            </div>
-                            <div class="card-content">
-                                <h3 class="card-title" data-translate="projetoQuintotitulo">Imersão Dev com Google
-                                    Gemini (Alura)</h3>
-                                <p class="card-text" data-translate="projetoQuintotexto">
-                                    Essa aplicação te ajuda a encontrar as informações mais relevantes sobre cada carta,
-                                    desde a descrição até o motivo de ela ser tão icônica.
-                                </p>
-                                <div class="card-footer">
-                                    <div class="card-profile">
-                                        <img src="/icons/css.svg" alt="logo tecnologias" class="card-black"
-                                            loading="lazy" width="32px" height="32px">
-                                        <img src="/icons/javascript.svg" alt="logo tecnologias" class="card-black"
-                                            loading="lazy" width="32px" height="32px">
-                                        <img src="/icons/htmlicon.svg" alt="logo tecnologias" class="card-black"
-                                            loading="lazy" width="32px" height="32px">
-                                    </div>
-                                    <a href="https://imersao-dev-com-gemini-alura-magic-the-gathering.vercel.app/"
-                                        target="_blank" class="button" data-translate="projetoButao">Ver Projeto</a>
-                                    <a
-                                        href="https://github.com/GbAmorim/Imers-o-Dev-com-Gemini-Alura---Magic-The-Gathering"><img
-                                            class="logo-icons" src="/icons/git2.svg" alt="Logo do github"
-                                            loading="lazy"></a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="card swiper-slide">
-                            <div class="card-image">
-                                <img src="/images/projeto7.png" alt="imagem do projeto" loading="lazy">
-                                <p class="card-tag" data-translate="projetoBreve">EM BREVE</p>
-                            </div>
-                            <div class="card-content">
-                                <h3 class="card-title" data-translate="projetoSextotitulo">Sistema de Agendamento de
-                                    barbearia</h3>
-                                <p class="card-text" data-translate="projetoSextotexto">
-                                    Esse sistema visa o agendamento de barbeiros pelos clientes, de forma simples e
-                                    prática.
-                                </p>
-                                <div class="card-footer">
-                                    <div class="card-profile">
-                                        <img src="/icons/typescript.svg" alt="logo tecnologias" loading="lazy"
-                                            width="32px" height="32px">
-                                        <img src="/icons/react.svg" alt="logo tecnologias" class="card-black"
-                                            loading="lazy" width="32px" height="32px">
-                                        <img src="/icons/nodejs.svg" alt="logo tecnologias" loading="lazy" width="32px"
-                                            height="32px">
-                                        <img src="/icons/postgresql.svg" alt="logo tecnologias" loading="lazy"
-                                            width="32px" height="32px">
-                                        <img src="/icons/tailwind2.svg" alt="logo tecnologias" loading="lazy"
-                                            width="32px" height="32px">
-                                        <img src="/icons/shadcn.png" alt="logo tecnologias" loading="lazy" width="32px"
-                                            height="32px">
-                                        <img src="/icons/prima.svg" alt="logo tecnologias" loading="lazy" width="32px"
-                                            height="32px">
-                                    </div>
-                                    <a href="https://github.com/GbAmorim" target="_blank" class="button"
-                                        data-translate="projetoButao">Ver Projeto</a>
-                                    <a href="https://github.com/GbAmorim" target="_blank"><img class="logo-icons"
-                                            src="/icons/git2.svg" alt="Logo do github" loading="lazy"></a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- <div class="card swiper-slide">
-                            <div class="card-image">
-                                <img src="/images/projeto8.png" alt="imagem do projeto" loading="lazy">
-                                <p class="card-tag">EM BREVE</p>
-                            </div>
-                            <div class="card-content">
-                                <h3 class="card-title">E-comerce</h3>
-                                <p class="card-text">
-                                    Este e-commerce de loja de roupas foi desenvolvido durante um bootcamp, utilizando
-                                    tecnologias modernas para proporcionar uma experiência de compra online intuitiva e
-                                    eficiente.
-                                </p>
-                                <div class="card-footer">
-                                    <div class="card-profile">
-                                        <img src="/icons/typescript.svg" alt="logo tecnologias" loading="lazy"
-                                            width="32px" height="32px">
-                                        <img src="/icons/react.svg" alt="logo tecnologias" class="card-black"
-                                            loading="lazy" width="32px" height="32px">
-                                        <img src="/icons/nodejs.svg" alt="logo tecnologias" loading="lazy" width="32px"
-                                            height="32px">
-                                        <img src="/icons/postgresql.svg" alt="logo tecnologias" loading="lazy"
-                                            width="32px" height="32px">
-                                        <img src="/icons/tailwind2.svg" alt="logo tecnologias" loading="lazy"
-                                            width="32px" height="32px">
-                                        <img src="/icons/shadcn.png" alt="logo tecnologias" loading="lazy" width="32px"
-                                            height="32px">
-                                        <img src="/icons/nextjs.svg" alt="logo tecnologias" loading="lazy" width="32px"
-                                            height="32px">
-                                        <img src="/icons/stripe.svg" alt="logo tecnologias" loading="lazy" width="32px"
-                                            height="32px">
-                                    </div>
-                                    <a href="#" class="button">Ver Projeto</a>
-                                    <img class="logo-icons" src="/icons/github.png" alt="Logo do github" loading="lazy">
-                                </div>
-                            </div>
-                        </div> -->
-
-
-                        <div class="card swiper-slide">
-                            <div class="card-image">
-                                <img src="/images/projeto1.png" alt="imagem do projeto" loading="lazy">
-                                <p class="card-tag" data-translate="projetoPessoal">Projeto pessoal</p>
-                            </div>
-                            <div class="card-content">
-                                <h3 class="card-title" data-translate="projetoSetimotitulo">Landing page - Sass</h3>
-                                <p class="card-text" data-translate="projetoSetimotexto">
-                                    Landing page desenvolvido em Sass com responsividade mobile.
-                                </p>
-                                <div class="card-footer">
-                                    <div class="card-profile">
-                                        <img src="/icons/sass.svg" alt="logo tecnologias" class="card-black"
-                                            loading="lazy" width="32px" height="32px">
-                                        <img src="/icons/htmlicon.svg" alt="logo tecnologias" class="card-black"
-                                            loading="lazy" width="32px" height="32px">
-                                    </div>
-                                    <a href="https://inscricao-python-pagina.vercel.app/inscricao.html" target="_blank"
-                                        class="button" data-translate="projetoButao">Ver Projeto</a>
-                                    <a href="https://github.com/GbAmorim/inscricao-python-pagina" target="_blank"><img
-                                            class="logo-icons" src="/icons/git2.svg" alt="Logo do github"
-                                            loading="lazy"></a>
-                                </div>
-                            </div>
-                        </div>
-
-
-
+                <!-- Projeto 1 -->
+                <div class="project-detail-section">
+                    <div class="project-media">
+                        <span class="tag" data-translate="projetoPessoal">Projeto Pessoal</span>
+                        <img src="/images/projeto5.png" alt="Réplica do Sistema de pedidos do MCDonald's"
+                            loading="lazy" />
                     </div>
+                    <div class="project-info">
+                        <h1 data-translate="projetoPrimeirotitulo">Réplica do Sistema de pedidos do MCDonald's</h1>
+                        <p class="description" data-translate="projetoPrimeirotexto">
+                            Sistema de autoatendimento, como aqueles do Mc Donald's e Burger King, onde você chega e faz
+                            o seu pedido sem falar com o atendente.
+                        </p>
+                        <p>Tecnologias:</p>
+                        <div class="project-technologies">
+                            <img src="/icons/tailwind.svg" alt="Tailwind" width="32" height="32">
+                            <img src="/icons/typescript-white.svg" alt="TypeScript" width="32" height="32">
+                            <img src="/icons/nextjs-icon-white.svg" alt="Next.js" width="32" height="32">
+                            <img src="/icons/node-white.svg" alt="Node.js" width="32" height="32">
+                            <img src="/icons/postgresql-white.svg" alt="PostgreSQL" width="32" height="32">
+                            <img src="/icons/react.svg" alt="React" width="32" height="32">
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://fullstackweek-donalds-qdmp68183-gbamorims-projects.vercel.app/fsw-donalds"
+                                class="btn-link live-demo" data-translate="projetoButao">LIVE DEMO ↗</a>
+                            <a href="https://github.com/GbAmorim/fullstackweek-donalds" target="_blank"
+                                class="btn-link github">Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="project-detail-section">
+                    <div class="project-media">
+                        <span class="tag" data-translate="projetoPessoal">Projeto Pessoal</span>
+                        <img src="/images/projeto4.png" alt="Site de pesquisa de filmes" loading="lazy" />
+                    </div>
+                    <div class="project-info">
+                        <h1 data-translate="projetoSegundotitulo">Site de pesquisa de filmes</h1>
+                        <p class="description" data-translate="projetoSegundotexto">
+                            Esse site possibilita o usuário a pesquisar filmes através de uma API e salvá-los utilizando
+                            localStorage.
+                        </p>
+                        <p>Tecnologias:</p>
+                        <div class="project-technologies">
+                            <img src="/icons/css.svg" alt="CSS" width="32" height="32">
+                            <img src="/icons/javascript.svg" alt="JavaScript" width="32" height="32">
+                            <img src="/icons/htmlicon.svg" alt="HTML" width="32" height="32">
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://my-movies-nu.vercel.app/" class="btn-link live-demo" target="_blank"
+                                data-translate="projetoButao">LIVE DEMO ↗</a>
+                            <a href="https://github.com/GbAmorim/MyMovies" target="_blank"
+                                class="btn-link github">Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="project-detail-section">
+                    <div class="project-media">
+                        <span class="tag" data-translate="projetoPessoal">Projeto Pessoal</span>
+                        <img src="/images/projeto3.png" alt="Landing Page Bootstrap" loading="lazy" />
+                    </div>
+                    <div class="project-info">
+                        <h1 data-translate="projetoTerceirotitulo">Landing Page Bootstrap</h1>
+                        <p class="description" data-translate="projetoTerceirotexto">
+                            Landing page desenvolvida através do curso de programação frontend da Hashtag Treinamentos.
+                        </p>
+                        <p>Tecnologias:</p>
+                        <div class="project-technologies">
+                            <img src="/icons/bootstrap.svg" alt="Bootstrap" width="32" height="32">
+                            <img src="/icons/htmlicon.svg" alt="HTML" width="32" height="32">
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://site-lista-de-espera-bootstrap.vercel.app/" class="btn-link live-demo"
+                                data-translate="projetoButao">LIVE DEMO ↗</a>
+                            <a href="https://github.com/GbAmorim/Site-lista-de-espera-bootstrap" target="_blank"
+                                class="btn-link github">Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 4 -->
+                <div class="project-detail-section">
+                    <div class="project-media">
+                        <span class="tag" data-translate="projetoPessoal">Projeto Pessoal</span>
+                        <img src="/images/projeto2.png" alt="Portal Hashtag Treinamentos" loading="lazy" />
+                    </div>
+                    <div class="project-info">
+                        <h1 data-translate="projetoQuartotitulo">Site - Portal Hashtag Treinamentos</h1>
+                        <p class="description" data-translate="projetoQuartotexto">
+                            Site desenvolvido no curso de programação da Hashtag Treinamentos, feito apenas em CSS e
+                            HTML.
+                        </p>
+                        <p>Tecnologias:</p>
+                        <div class="project-technologies">
+                            <img src="/icons/css.svg" alt="CSS" width="32" height="32">
+                            <img src="/icons/htmlicon.svg" alt="HTML" width="32" height="32">
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://site-portal-hashtag-treinamentos.vercel.app/" class="btn-link live-demo"
+                                target="_blank" data-translate="projetoButao">LIVE DEMO ↗</a>
+                            <a href="https://github.com/GbAmorim/Site-Portal-Hashtag-Treinamentos" target="_blank"
+                                class="btn-link github">Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 5 -->
+                <div class="project-detail-section">
+                    <div class="project-media">
+                        <span class="tag" data-translate="projetoPessoal">Projeto Pessoal</span>
+                        <img src="/images/projeto6.png" alt="Imersão Dev com Google Gemini" loading="lazy" />
+                    </div>
+                    <div class="project-info">
+                        <h1 data-translate="projetoQuintotitulo">Imersão Dev com Google Gemini (Alura)</h1>
+                        <p class="description" data-translate="projetoQuintotexto">
+                            Essa aplicação te ajuda a encontrar as informações mais relevantes sobre cada carta, desde a
+                            descrição até o motivo de ela ser tão icônica.
+                        </p>
+                        <p>Tecnologias:</p>
+                        <div class="project-technologies">
+                            <img src="/icons/css.svg" alt="CSS" width="32" height="32">
+                            <img src="/icons/javascript.svg" alt="JavaScript" width="32" height="32">
+                            <img src="/icons/htmlicon.svg" alt="HTML" width="32" height="32">
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://imersao-dev-com-gemini-alura-magic-the-gathering.vercel.app/"
+                                target="_blank" class="btn-link live-demo" data-translate="projetoButao">LIVE DEMO ↗</a>
+                            <a href="https://github.com/GbAmorim/Imers-o-Dev-com-Gemini-Alura---Magic-The-Gathering"
+                                target="_blank" class="btn-link github">Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 6 -->
+                <div class="project-detail-section">
+                    <div class="project-media">
+                        <span class="tag" data-translate="projetoBreve">EM BREVE</span>
+                        <img src="/images/projeto7.png" alt="Sistema de Agendamento de barbearia" loading="lazy" />
+                    </div>
+                    <div class="project-info">
+                        <h1 data-translate="projetoSextotitulo">Sistema de Agendamento de barbearia</h1>
+                        <p class="description" data-translate="projetoSextotexto">
+                            Esse sistema visa o agendamento de barbeiros pelos clientes, de forma simples e prática.
+                        </p>
+                        <p>Tecnologias:</p>
+                        <div class="project-technologies">
+                            <img src="/icons/typescript-white.svg" alt="TypeScript" width="32" height="32">
+                            <img src="/icons/react.svg" alt="React" width="32" height="32">
+                            <img src="/icons/node-white.svg" alt="Node.js" width="32" height="32">
+                            <img src="/icons/postgresql-white.svg" alt="PostgreSQL" width="32" height="32">
+                            <img src="/icons/tailwind.svg" alt="Tailwind" width="32" height="32">
+                            <img src="/icons/prisma-white.svg" alt="Prisma" width="32" height="32">
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/GbAmorim" target="_blank" class="btn-link live-demo"
+                                data-translate="projetoButao">Ver Projeto</a>
+                            <a href="https://github.com/GbAmorim" target="_blank" class="btn-link github">Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 7 -->
+                <div class="project-detail-section">
+                    <div class="project-media">
+                        <span class="tag" data-translate="projetoPessoal">Projeto Pessoal</span>
+                        <img src="/images/projeto1.png" alt="Landing page Sass" loading="lazy" />
+                    </div>
+                    <div class="project-info">
+                        <h1 data-translate="projetoSetimotitulo">Landing page - Sass</h1>
+                        <p class="description" data-translate="projetoSetimotexto">
+                            Landing page desenvolvido em Sass com responsividade mobile.
+                        </p>
+                        <p>Tecnologias:</p>
+                        <div class="project-technologies">
+                            <img src="/icons/sass.svg" alt="Sass" width="32" height="32">
+                            <img src="/icons/htmlicon.svg" alt="HTML" width="32" height="32">
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://inscricao-python-pagina.vercel.app/inscricao.html" target="_blank"
+                                class="btn-link live-demo" data-translate="projetoButao">LIVE DEMO ↗</a>
+                            <a href="https://github.com/GbAmorim/inscricao-python-pagina" target="_blank"
+                                class="btn-link github">Github</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="https://github.com/GbAmorim" target="_blank">
+                <button class="button" data-translate="projetoButaovermais">Veja mais projetos</button>
+            </a>
+        </section>
+
+        <!-- SESSÃO NFT -->
+        <section class="nft" id="sessao-nft">
+            <h2 class="nft-titulo">NFTs</h2>
+            <div class="swiper">
+                <div class="card-wrapper ">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="images/render1.png" alt="" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="images/render2.png" alt="" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="images/render3.jpg" alt="" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="images/render4.png" alt="" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="images/render5.png" alt="" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="images/render6.png" alt="" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="images/render7.png" alt="" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="images/render8.png" alt="" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="images/sherlock_holmes1.png" alt="" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="images/William1.png" alt="" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="images/render12.png" alt="" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="images/render5.png" alt="" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="images/Mary1.png" alt="" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="images/render13.png" alt="" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="images//render15.png" alt="" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="images/render16.png" alt="" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="images//render18.png" alt="" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="images/render21.png" alt="" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="images/render25.png" alt="" class="card-image">
+                            </a>
+                        </li>
+                    </ul>
 
                     <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
                 </div>
-            </div>
-            <a href="https://github.com/GbAmorim" target="_blank"><button class="button"
-                    data-translate="projetoButaovermais">Veja mais projetos</button></a>
 
+            </div>
+
+            <a href="https://github.com/GbAmorim" target="_blank">
+                <button class="button" data-translate="projetoButaovermais">Veja mais projetos</button>
+            </a>
         </section>
 
         <!-- SESSÃO CONTATO -->
