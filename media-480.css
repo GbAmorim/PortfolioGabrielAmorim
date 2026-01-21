@@ -6,7 +6,7 @@
 
     #sessao-sobre {
         width: 100dvw;
-        height: calc(100dvh - 100px);
+        /* height: calc(100dvh - 100px); */
     }
 
     #sessao-skills {
