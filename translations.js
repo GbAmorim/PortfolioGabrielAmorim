@@ -25,6 +25,18 @@ const translations = {
 
         projetoPessoal: "PROJETO PESSOAL",
         projetoBreve: "EM BREVE",
+        projetoComercial: "FREELANCER",
+
+        projetoMansaotitulo: "Landing Page Mansão Maromba",
+        projetoMansaotexto:
+            "Landing Page da mansão maromba, destacando os produtos da marca e brincando um pouco com estilização.",
+        projetoXadreztitulo: "Site de Xadrez com API do Chess.com",
+        projetoXadreztexto:
+            "Nesse site, o usuário pode ver os lances das jogadas em tempo real e baixar o arquivo em pdf, mostrando cada lance da partida. As partidas são puxadas dos jogos do chess.com",
+        projetoBosquetitulo: "Web Aplicativo - Sacolé do Bosque",
+        projetoBosquetexto:
+            "Esse web aplicativo foi desenvolvido para um comércio local de sacolé, onde só funciona para um prédio em específico. Moradores do predio, podem fazer seus pedidos através dele.",
+
         projetoPrimeirotitulo: "Réplica do Sistema de pedidos do MCDonald's",
         projetoPrimeirotexto:
             "Sistema de autoatendimento, como aqueles do Mc Donald 's e Burger King, onde você chega e faz o seu pedido sem falar com o atendente.",
@@ -100,10 +112,24 @@ const translations = {
         skillsCritica: "Critical Thinking",
         skillsCriatividade: "Creativity",
 
+        projetoMansaotitulo: "Mansão Maromba Landing Page",
+        projetoMansaotexto:
+            "A landing page for Mansão Maromba, showcasing the brand's products and exploring creative styling.",
+
+        projetoXadreztitulo: "Chess Website with Chess.com API",
+        projetoXadreztexto:
+            "In this site, users can view move-by-move gameplay in real-time and download match history as a PDF. Matches are fetched directly from Chess.com.",
+
+        projetoBosquetitulo: "Web Application - Sacolé do Bosque",
+        projetoBosquetexto:
+            "This web application was developed for a local gourmet popsicle business, specifically serving a single residential building. Residents can place their orders directly through the platform.",
+
         projectsTitle: "Projects",
 
         projetoPessoal: "PERSONAL PROJECT",
         projetoBreve: "COMING SOON",
+        projetoComercial: "FREELANCER",
+
         projetoPrimeirotitulo: "Replica of McDonald's Ordering System",
         projetoPrimeirotexto:
             "Self-service system, like those at McDonald's and Burger King, where you can place your order without talking to the attendant.",

@@ -338,6 +338,10 @@
     animation: bootstrapp-fill 2s forwards;
 }
 
+.skills .details.react {
+    animation: react-fill 2s forwards;
+}
+
 .skills .bar {
     position: relative;
     border: 2px solid var(--text-color);
@@ -402,7 +406,7 @@
 
 @keyframes js-fill {
     100% {
-        width: 55%;
+        width: 90%;
         opacity: 1;
     }
 }
@@ -460,6 +464,17 @@
         width: 60%;
         opacity: 1;
     }
+}
+
+@keyframes react-fill {
+    100% {
+        width: 80%;
+        opacity: 1;
+    }
+}
+
+.bar #react-bar {
+    animation: react-fill 2s forwards;
 }
 
 .other-skills {

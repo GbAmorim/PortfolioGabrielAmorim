@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link
         href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@100..900&family=Silkscreen:wght@400;700&display=swap"
@@ -33,6 +34,8 @@
 </head>
 
 <body class="darkmode">
+
+
     <!-- SESSÃO HEADER -->
     <header id="navbar">
         <nav>
@@ -78,7 +81,7 @@
     <main>
         <section class="section hero" id="sessao-sobre">
             <div class="sobre">
-                <div class="sobre__descricao">
+                <div class="sobre__descricao" data-aos="fade-right" style="overflow: hidden;">
                     <div class="animated-text"><span></span></div>
                     <p data-translate="heroText">Olá, me chamo Gabriel Amorim de Ceia, sou desenvolvedor frontend com
                         formação em Ciência da
@@ -107,7 +110,8 @@
                     </div>
                 </div>
 
-                <img class="logo-programador" src="/images/programador.svg" alt="Imagem de programador" loading="lazy">
+                <img class="logo-programador" src="/images/programador.svg" alt="Imagem de programador" loading="lazy"
+                    data-aos="fade-left" style="overflow: hidden;">
             </div>
 
             <div class="floating-wrapper" id="arrowFlutuante"><img src="/icons/arrowdown.svg" alt="" class="arrowdown">
@@ -118,7 +122,7 @@
         <!-- SESSÃO SKILLS -->
         <section class="section hero " id="sessao-skills">
             <h2 class="skills__title autoShow" data-translate="skillsTitle">Minhas habilidades</h2>
-            <div class="skills__section">
+            <div class="skills__section" data-aos="fade-up">
                 <div class="skills__container">
                     <div class="skills__container-title">
                         <h3>Hard Skills</h3>
@@ -154,13 +158,13 @@
                                     <div class="skills">
                                         <div class="details html">
                                             <span>JS</span>
-                                            <span>55%</span>
+                                            <span>90%</span>
                                         </div>
                                         <div class="bar">
                                             <div id="js-bar"></div>
                                         </div>
                                     </div>
-                                    <div class="skills">
+                                    <!-- <div class="skills">
                                         <div class="details html">
                                             <span>C++</span>
                                             <span>20%</span>
@@ -177,7 +181,7 @@
                                         <div class="bar">
                                             <div id="java-bar"></div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
 
@@ -214,7 +218,7 @@
                                     <div class="skills">
                                         <div class="details html">
                                             <span>React</span>
-                                            <span data-translate="skillsEstudando">(Estudando)</span>
+                                            <span>80%</span>
                                         </div>
                                         <div class="bar">
                                             <div id="react-bar"></div>
@@ -350,7 +354,7 @@
 
             <div class="projects__grid">
 
-                <div class="project-detail-section">
+                <div class="project-detail-section" data-aos="fade-left" style="overflow: hidden;">
                     <div class="project-media">
                         <span class="tag" data-translate="projetoPessoal">Projeto Pessoal</span>
                         <img src="/images/projeto9.webp" alt="Projeto de Investimentos" loading="lazy" />
@@ -381,8 +385,93 @@
                 </div>
 
 
-                <!-- Projeto 1 -->
-                <div class="project-detail-section">
+                <!-- mansao -->
+
+                <div class="project-detail-section" data-aos="fade-right" style="overflow: hidden;">
+                    <div class="project-media">
+                        <span class="tag" data-translate="projetoPessoal">Projeto Pessoal</span>
+                        <img src="/images/mansao.webp" alt="site mansao maromba" loading="lazy" />
+                    </div>
+                    <div class="project-info">
+                        <h1 data-translate="projetoMansaotitulo">Landing Page Mansão Maromba</h1>
+                        <p class="description" data-translate="projetoMansaotexto">
+                            Landing Page da mansão maromba, destacando os produtos da marca e brincando um pouco com
+                            estilização.
+                        </p>
+                        <p data-translate="projetoparagrafo">Tecnologias:</p>
+                        <div class="project-technologies">
+                            <img src="/icons/htmlicon.svg" alt="Tailwind" width="32" height="32">
+                            <img src="/icons/css.svg" alt="Tailwind" width="32" height="32">
+                            <img src="/icons/javascript.svg" alt="Tailwind" width="32" height="32">
+
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://mansao-maromba-rho.vercel.app/" class="btn-link live-demo"
+                                data-translate="projetoButao">LIVE DEMO ↗</a>
+                            <a href="https://github.com/GbAmorim/MansaoMaromba" target="_blank"
+                                class="btn-link github">Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- xadrez -->
+
+                <div class="project-detail-section" data-aos="fade-left" style="overflow: hidden;">
+                    <div class="project-media">
+                        <span class="tag" data-translate="projetoPessoal">Projeto Pessoal</span>
+                        <img src="/images/mestres.webp" alt="site mestres do xadrez" loading="lazy" />
+                    </div>
+                    <div class="project-info">
+                        <h1 data-translate="projetoXadreztitulo"> </h1>
+                        <p class="description" data-translate="projetoXadreztexto">
+                        </p>
+                        <p data-translate="projetoparagrafo">Tecnologias:</p>
+                        <div class="project-technologies">
+                            <img src="/icons/htmlicon.svg" alt="Tailwind" width="32" height="32">
+                            <img src="/icons/css.svg" alt="Tailwind" width="32" height="32">
+                            <img src="/icons/javascript.svg" alt="Tailwind" width="32" height="32">
+
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://mestresdo-xadrez.vercel.app/" class="btn-link live-demo"
+                                data-translate="projetoButao">LIVE DEMO ↗</a>
+                            <a href="https://github.com/GbAmorim/MestresdoXadrez" target="_blank"
+                                class="btn-link github">Github</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- bosque -->
+
+                <div class="project-detail-section" data-aos="fade-right" style="overflow: hidden;">
+                    <div class="project-media">
+                        <span class="tag" data-translate="projetoComercial">Projeto Comercial</span>
+                        <img src="/images/bosque.webp" alt="site do sacole do bosque" loading="lazy" />
+                    </div>
+                    <div class="project-info">
+                        <h1 data-translate="projetoBosquetitulo"> </h1>
+                        <p class="description" data-translate="projetoBosquetexto">
+                        </p>
+                        <p data-translate="projetoparagrafo">Tecnologias:</p>
+                        <div class="project-technologies">
+                            <img src="/icons/react.svg" alt="Tailwind" width="32" height="32">
+                            <img src="/icons/tailwind.svg" alt="Tailwind" width="32" height="32">
+                            <img src="/icons/javascript.svg" alt="Tailwind" width="32" height="32">
+                            <img src="/icons/firebase.svg" alt="Tailwind" width="32" height="32">
+
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://www.linkedin.com/posts/gabrielamorimdeceia_durante-a-rotina-do-sacol%C3%A9-do-bosque-ficou-activity-7419803535795736576-FokE?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDAAfMBf5LTBszClJ6xGd9PXfU_H_N5YLk"
+                                class="btn-link live-demo" data-translate="projetoButao">LIVE DEMO ↗</a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="project-detail-section" data-aos="fade-left" style="overflow: hidden;">
                     <div class="project-media">
                         <span class="tag" data-translate="projetoPessoal">Projeto Pessoal</span>
                         <img src="/images/projeto5.webp" alt="Réplica do Sistema de pedidos do MCDonald's"
@@ -413,7 +502,7 @@
                 </div>
 
                 <!-- Projeto 2 -->
-                <div class="project-detail-section">
+                <div class="project-detail-section" data-aos="fade-right" style="overflow: hidden;">
                     <div class="project-media">
                         <span class="tag" data-translate="projetoPessoal">Projeto Pessoal</span>
                         <img src="/images/projeto4.webp" alt="Site de pesquisa de filmes" loading="lazy" />
@@ -440,7 +529,7 @@
                 </div>
 
                 <!-- Projeto 3 -->
-                <div class="project-detail-section">
+                <div class="project-detail-section" data-aos="fade-left" style="overflow: hidden;">
                     <div class="project-media">
                         <span class="tag" data-translate="projetoPessoal">Projeto Pessoal</span>
                         <img src="/images/projeto3.webp" alt="Landing Page Bootstrap" loading="lazy" />
@@ -465,7 +554,7 @@
                 </div>
 
                 <!-- Projeto 4 -->
-                <div class="project-detail-section">
+                <div class="project-detail-section" data-aos="fade-right" style="overflow: hidden;">
                     <div class="project-media">
                         <span class="tag" data-translate="projetoPessoal">Projeto Pessoal</span>
                         <img src="/images/projeto2.webp" alt="Portal Hashtag Treinamentos" loading="lazy" />
@@ -491,7 +580,7 @@
                 </div>
 
                 <!-- Projeto 5 -->
-                <div class="project-detail-section">
+                <div class="project-detail-section" data-aos="fade-left" style="overflow: hidden;">
                     <div class="project-media">
                         <span class="tag" data-translate="projetoPessoal">Projeto Pessoal</span>
                         <img src="/images/projeto6.webp" alt="Imersão Dev com Google Gemini" loading="lazy" />
@@ -518,7 +607,7 @@
                 </div>
 
                 <!-- Projeto 6 -->
-                <div class="project-detail-section">
+                <div class="project-detail-section" data-aos="fade-right" style="overflow: hidden;">
                     <div class="project-media">
                         <span class="tag" data-translate="projetoBreve">EM BREVE</span>
                         <img src="/images/projeto7.webp" alt="Sistema de Agendamento de barbearia" loading="lazy" />
@@ -546,7 +635,7 @@
                 </div>
 
                 <!-- Projeto 7 -->
-                <div class="project-detail-section">
+                <div class="project-detail-section" data-aos="fade-left" style="overflow: hidden;">
                     <div class="project-media">
                         <span class="tag" data-translate="projetoPessoal">Projeto Pessoal</span>
                         <img src="/images/projeto1.webp" alt="Landing page Sass" loading="lazy" />
@@ -578,7 +667,7 @@
         </section>
 
         <!-- SESSÃO NFT -->
-        <section class="section nft" id="sessao-nft">
+        <section class="section nft" id="sessao-nft" data-aos="zoom-in" style="overflow: hidden;">
             <h2 class="nft-titulo">NFTs</h2>
             <p class="p-nft" data-translate="pnft">Aqui estão alguns dos NFTs que produzi enquanto trabalhava na Smobler
                 e The Sandbox, voltados ao universo
@@ -894,6 +983,7 @@
             </div>
         </footer>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="translations.js"></script>
 

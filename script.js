@@ -32,7 +32,7 @@ if (arrow && observada) {
         },
         {
             threshold: 0.5,
-        }
+        },
     );
 
     observer.observe(observada);
@@ -56,3 +56,5 @@ window.addEventListener("scroll", () => {
         navbar.classList.remove("hidden");
     }
 });
+
+AOS.init();
